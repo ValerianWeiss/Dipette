@@ -1,0 +1,24 @@
+.App {
+  position: relative;
+  height: 305px;
+  width: 500px;
+  background-color: #1E1E1E; 
+}
+
+#color-picker-btn {
+  height: 30px;
+  width: calc(100% - 40px);
+  margin: 0 20px 0 20px;
+  padding-top: 10px;
+  border: none;
+  background-color: #007ACC;
+  text-align: center;
+}
+
+#color-picker-btn:active {
+  background-color: rgb(3, 96, 158);
+}
+
+#color-picker-btn-txt {
+  font-size: 18px;
+}

@@ -1,0 +1,73 @@
+.Color {
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+#color-container {
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#preview-window {
+  margin: 20px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+}
+
+#options-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin-left: 50%;
+  padding: 20px;
+}
+
+#representation-wrapper {
+  position: relative;
+  margin: 20px 20px 20px 0;
+  height: calc(100% - 40px);
+  width: calc(100% - 20px);
+}
+
+.representation-content-container {
+  position: relative;
+  height: calc(33.33% - 10%);
+  width: 100%;
+  padding-top: 10%;
+}
+
+.format-description {
+  width: 30%;
+  float: left;
+}
+
+.color-data {
+  float: left;
+  width: 60%;
+}
+
+.copy-btn {
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-color: #CCC;
+  padding: 0;
+}
+
+.copy-btn:hover {
+  background-color: #EEE;
+}
+
+.copy-image {
+  height:16px;
+  width: 16px;
+  margin-top: 3px;
+}
