@@ -41,9 +41,7 @@ export default class App extends Component {
       this.setBtnText('Release Ctrl to pick a color');
       this.getPixelColor();
     } else if(event.key === ' ' && this.getPixelInterval != null) { // the empty string is representing the space key
-      clearInterval(this.getPixelInterval);
-      this.setBtnText(this.defaultBtnText);
-      this.getPixelInterval = null;
+      this.clearInterval();
     }
   }
 
@@ -65,10 +63,18 @@ export default class App extends Component {
     });
   }
 
+  clearInterval() {
+    clearInterval(this.getPixelInterval);
+    this.setBtnText(this.defaultBtnText);
+    this.getPixelInterval = null;
+  }
+
   onColorPickerClick = () => {
     if(this.getPixelInterval == null) {
       this.setBtnText('Hit space to pick a color');
       this.getPixelInterval = setInterval(this.getPixelColor, 100);
+    } else {
+      this.clearInterval();
     }
   }
 
