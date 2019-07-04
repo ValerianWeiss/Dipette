@@ -7,7 +7,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.getPixelInterval = null;
-    this.defaultBtnText = 'Select color (Ctrl)';
+    this.defaultBtnText = 'Select a color (Ctrl)';
 
     this.state = {
       btnText: this.defaultBtnText, 
