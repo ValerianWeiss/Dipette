@@ -38,8 +38,8 @@
     "build-cs": "cd ./src/ScreenChecker && bash build.sh && cd ../..",
     "electron-dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "postinstall": "electron-builder install-app-deps",
-    "preelectron-pack": "yarn build && yarn build-cs",
-    "electron-pack": "build -w"
+    "preelectron-pack": "yarn build",
+    "electron-pack": "build -w && yarn build-cs"
   },
   "eslintConfig": {
     "extends": "react-app"

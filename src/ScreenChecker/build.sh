@@ -1,4 +1,3 @@
 #!/bin/bash
-mkdir ../../public/ScreenChecker
-cp -r ./libs/Newtonsoft.Json.dll ../../public/ScreenChecker/
-csc -r:./libs/Newtonsoft.Json.dll -out:../../public/ScreenChecker/ScreenChecker.exe *.cs
+cp -r ./libs/Newtonsoft.Json.dll ../../dist/win-unpacked
+csc -r:./libs/Newtonsoft.Json.dll -out:../../dist/win-unpacked/ScreenChecker.exe *.cs
